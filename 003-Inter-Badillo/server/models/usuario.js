@@ -1,40 +1,39 @@
-constmongoose = require('mongoose');
-letSchema = mongoose.Schema;
+const mongoose = require('mongoose');
  
-let usuarioSchema = newSchema({​​​​​​​​
-nombre: {​​​​​​​​
-type:String,
-required: [true, 'Ingresar nombre']
-    }​​​​​​​​,
-primer_apellido: {​​​​​​​​
-type:String,
-required: [true, 'Ingresar primer apellido']
-    }​​​​​​​​,
-segundo_apellido: {​​​​​​​​
-type:String,
-required: [true, 'Ingresar segundo apellido']
-    }​​​​​​​​,
-edad:{​​​​​​​​
-type:Number, 
-required: [true, 'Ingresar edad']
-    }​​​​​​​​,
-curp:{​​​​​​​​
-type:String,
-required: [true, 'Ingresar curp']
-    }​​​​​​​​,
-telefono:{​​​​​​​​
-type:Number,
-required: [true, 'Ingresar No. de telefono']
-    }​​​​​​​​,
-mail:{​​​​​​​​
-type:String,
-unique: [true, 'Ingresar correo electronico']
-    }​​​​​​​​,
-activo:{​​​​​​​​
-type:Boolean,
-default:true
-    }​​​​​​​​
-}​​​​​​​​);
+let Schema = mongoose.Schema;
  
+let usuarioSchema = new Schema({
+    nombre: {
+        type: String,
+        required: [true, 'El nombre es necesario.']
+    },
+    primerApellido: {
+        type: String,
+        required: [true, 'El primer apellido necesario.']
+    },
+    segundoApellido: {
+        type: String,
+        required: [true, 'El segundo apellido es  Paterno necesario.']
+    },
+    edad:{
+        type: Number,
+        required: [true, 'La edad es necesaria.']
+    },
+    curp:{
+        type: String,
+        required: [true, 'Requiere la curp.']
+    },
+    telefono:{
+        type: Number,
+        required: [true, 'El numero telefonico es necesario']
+    },
+    email:{
+        type: String,
+        unique: true
+    },
+    activo:{
+        type: Boolean,
+        default:true
+    }
+});
 module.exports = mongoose.model('Usuario', usuarioSchema);
-
