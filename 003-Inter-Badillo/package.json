@@ -1,0 +1,22 @@
+{
+  "name": "003-inter-badillo",
+  "version": "1.0.0",
+  "description": "Servidor Rest, practica Intercuatrimestral",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BADILLO MACIAS SANDRA PAULINA 4 A",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauBadMac16/Inter-Badillo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PauBadMac16/Inter-Badillo/issues"
+  },
+  "homepage": "https://github.com/PauBadMac16/Inter-Badillo#readme"
+}

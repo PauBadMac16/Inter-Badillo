@@ -1,16 +1,16 @@
 constmongoose = require('mongoose');
 letSchema = mongoose.Schema;
  
-letusuarioSchema = newSchema({​​​​​​​​
+let usuarioSchema = newSchema({​​​​​​​​
 nombre: {​​​​​​​​
 type:String,
 required: [true, 'Ingresar nombre']
     }​​​​​​​​,
-primerApellido: {​​​​​​​​
+primer_apellido: {​​​​​​​​
 type:String,
 required: [true, 'Ingresar primer apellido']
     }​​​​​​​​,
-segundoApellido: {​​​​​​​​
+segundo_apellido: {​​​​​​​​
 type:String,
 required: [true, 'Ingresar segundo apellido']
     }​​​​​​​​,

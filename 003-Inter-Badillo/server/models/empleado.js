@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
  
 let empleadoSchema = new Schema({
-    nombredepuesto: {
+    nombre_del_puesto: {
         type: String,
         required: [true, 'Ingresar puesto']
     },
@@ -15,7 +15,7 @@ let empleadoSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Dpto'
     },
-    anosdeservicio: {
+    anios_servicio: {
         type: Number,
         required: true
     },
