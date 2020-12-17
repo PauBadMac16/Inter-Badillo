@@ -1,7 +1,6 @@
 const express = require('express');
 const _ = require('underscore');
 const usuario = require('../models/usuario');
-const Usuario = require('../models/usuario');
 const app = express();
 
 app.get('/usuario', function (req, res) {
@@ -51,7 +50,6 @@ app.get('/usuario', function (req, res) {
       });
 
       usr.save((err, usrDB) => {
-        // Si hubo algún error:
         if (err){
           return res.status(400).json({
             ok: false,
